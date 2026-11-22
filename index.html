@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Information Page</title>
+    <style>
+        /* General Page Styling */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7f6;
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+
+        /* Main Container */
+        .container {
+            max-width: 850px;
+            margin: 0 auto;
+            background: #ffffff;
+            padding: 30px 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        }
+
+        /* Header Section */
+        header {
+            text-align: center;
+            background: linear-gradient(135deg, #003366, #0059b3);
+            color: #ffffff;
+            padding: 25px;
+            border-radius: 8px;
+            margin-bottom: 25px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.2em;
+            letter-spacing: 1px;
+        }
+
+        header h2 {
+            margin: 5px 0;
+            font-size: 1.3em;
+            font-weight: 400;
+            color: #d9e6f2;
+        }
+
+        header h3 {
+            margin: 5px 0 0;
+            font-size: 1em;
+            font-weight: 300;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: #ffcc00;
+        }
+
+        /* Section Headings */
+        h2.section-title {
+            color: #003366;
+            border-bottom: 2px solid #0059b3;
+            padding-bottom: 5px;
+            margin-top: 30px;
+            font-size: 1.4em;
+        }
+
+        p {
+            margin-bottom: 15px;
+            color: #444;
+        }
+
+        /* Lists Styling */
+        ul {
+            padding-left: 20px;
+            margin-bottom: 20px;
+        }
+
+        li {
+            margin-bottom: 6px;
+        }
+
+        ul ul {
+            margin-top: 5px;
+            list-style-type: circle;
+            color: #555;
+        }
+
+        /* Tables Styling */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 0.95em;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+        }
+
+        th, td {
+            border: 1px solid #dcdcdc;
+            padding: 12px 15px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #004080;
+            color: #ffffff;
+            font-weight: 600;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9fbfd;
+        }
+
+        tr:hover {
+            background-color: #eef4fa;
+        }
+
+        /* Specific Row Highlights */
+        .total-row {
+            font-weight: bold;
+            background-color: #e6eff8 !important;
+        }
+
+        .pass-badge {
+            color: #155724;
+            background-color: #d4edda;
+            font-weight: bold;
+        }
+
+        .holiday {
+            background-color: #fff3cd;
+            color: #856404;
+            font-weight: bold;
+        }
+
+        /* Footer Styling */
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 15px;
+            border-top: 1px solid #e0e0e0;
+            color: #777;
+        }
+
+        footer h6 {
+            margin: 0;
+            font-size: 0.85em;
+            font-weight: normal;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>FAST-NUCES Peshawar</h1>
+            <h2>Department of Computer Science</h2>
+            <h3>Student Information Page</h3>
+        </header>
+
+        <p>Welcome to the student information page. This page demonstrates HTML elements such as headings, paragraphs, unordered lists, and tables styled with internal CSS.</p>
+
+        <h2 class="section-title">About Me</h2>
+        <p>My name is <strong>M. Hassaan Kaleem</strong>. I am a student of BS Computer Science. I like programming, reading books, and playing cricket.</p>
+
+        <h2 class="section-title">My Hobbies</h2>
+        <ul>
+            <li>Programming</li>
+            <li>Reading Books</li>
+            <li>Playing Cricket</li>
+            <li>Traveling</li>
+        </ul>
+
+        <h2 class="section-title">Subjects I Am Studying</h2>
+        <ul>
+            <li>Data Structures</li>
+            <li>Artificial Intelligence</li>
+            <li>Database Systems</li>
+            <li>Web Engineering
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h2 class="section-title">Semester Result</h2>
+        <p>The table below shows the marks of the current semester.</p>
+        <table>
+            <tr>
+                <th colspan="4">Semester Result - Fall 2026</th>
+            </tr>
+            <tr>
+                <th>Subject</th>
+                <th>Mid Term</th>
+                <th>Final Term</th>
+                <th>Total</th>
+            </tr>
+            <tr>
+                <td>Data Structures</td>
+                <td>25</td>
+                <td>45</td>
+                <td>70</td>
+            </tr>
+            <tr>
+                <td>Artificial Intelligence</td>
+                <td>28</td>
+                <td>50</td>
+                <td>78</td>
+            </tr>
+            <tr>
+                <td>Database Systems</td>
+                <td>22</td>
+                <td>40</td>
+                <td>62</td>
+            </tr>
+            <tr class="total-row">
+                <td colspan="3">Grand Total</td>
+                <td>210</td>
+            </tr>
+            <tr>
+                <td colspan="2"><strong>Result</strong></td>
+                <td colspan="2" class="pass-badge">Pass</td>
+            </tr>
+        </table>
+
+        <h2 class="section-title">Weekly Timetable</h2>
+        <table>
+            <tr>
+                <th>Day</th>
+                <th>8:00 - 9:30</th>
+                <th>9:30 - 11:00</th>
+                <th>11:00 - 12:30</th>
+            </tr>
+            <tr>
+                <td><strong>Monday</strong></td>
+                <td>Data Structures</td>
+                <td colspan="2">AI Lab</td>
+            </tr>
+            <tr>
+                <td><strong>Tuesday</strong></td>
+                <td>Database Systems</td>
+                <td>Web Engineering</td>
+                <td>Free</td>
+            </tr>
+            <tr>
+                <td><strong>Wednesday</strong></td>
+                <td colspan="3" class="holiday">Holiday</td>
+            </tr>
+        </table>
+
+        <h2 class="section-title">Contact</h2>
+        <p>For any query, contact the department office during working hours.</p>
+
+        <footer>
+            <h6>&copy; 2026 Student Information Page</h6>
+        </footer>
+    </div>
+
+</body>
+</html>
